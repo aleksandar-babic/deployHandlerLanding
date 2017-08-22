@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="DeployHandler - NodeJS app deployment made easy.">
+    <meta name="keywords" content="">
+
+    <title>deployHandler</title>
+
+    <!-- Styles -->
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/thesaas.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/toastr.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body>
+
+
+    <!-- Topbar -->
+    <nav class="topbar topbar-inverse topbar-expand-sm">
+      <div class="container">
+        
+        <div class="topbar-left">
+          <a class="topbar-brand" href="index.html">
+            <img class="logo-default" src="assets/img/logo.png" alt="logo">
+            <img class="logo-inverse" src="assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+
+        <div class="topbar-right">
+          <a class="btn btn-sm btn-white mr-4" href="https:/deployhandler.com/#/login">Login</a>
+          <a class="btn btn-sm btn-outline btn-white hidden-sm-down" href="https:/deployhandler.com/#/register">Register</a>
+        </div>
+
+      </div>
+    </nav>
+    <!-- END Topbar -->
+
+
+
+
+    <!-- Header -->
+    <header class="header header-inverse h-fullscreen p-0 bg-primary overflow-hidden" style="background-image: linear-gradient(to right, #434343 0%, black 100%);">
+      <canvas class="constellation"></canvas>
+
+      <div class="container text-center">
+
+        <div class="row h-full align-items-center">
+          <div class="col-12 col-md-8 offset-md-2">
+
+            <h1 class="fs-50 fw-600 lh-15 hidden-sm-down">Built for <span class="text-primary" data-type="Developers, Sysadmins, Managers"></span></h1>
+            <h1 class="fs-35 fw-600 lh-15 hidden-md-up">Built for<br><span class="text-primary" data-type="Developers, Sysadmins, Managers"></span></h1>
+            <br>
+            <p class="lead text-white fs-20">Using our platform is really easy, register, create app, add source files and start it!</p>
+            <br>
+            <a class="btn btn-xl btn-round btn-primary" href="https:/deployhandler.com/#/login">Try it now</a>
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Features
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <header class="section-header mb-0">
+            <small><strong>Welcome</strong></small>
+            <h2>Get a Better Understanding</h2>
+            <hr>
+            <p class="lead">App deployment can be tricky and time consuming, most of developers don't really care about that process,
+              they just want to get their awesome new app online, thats where we kick in.</p>
+            <p>Our platform is there to automate that process for you.</p>
+          </header>
+
+
+          
+          <div class="row gap-y">
+            
+            <div class="col-12 offset-md-2 col-md-8 mb-30">
+              <img src="assets/img/welcome.gif" alt="..." data-aos="fade-up">
+            </div>
+
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="flexbox gap-items-4">
+                <div>
+                  <i class="fa fa-tachometer fs-25 pt-4 text-secondary"></i>
+                </div>
+
+                <div>
+                  <h5>Fast</h5>
+                  <p>Our platform is optimized for fast load times and quick app deployments.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="flexbox gap-items-4">
+                <div>
+                  <i class="fa fa-code fs-25 pt-4 text-secondary"></i>
+                </div>
+
+                <div>
+                  <h5>Open source</h5>
+                  <p>You can find code for every component of platform on GitHub. <a href="https:/github.com/aleksandar-babic" target="_blank">Take a look at it.</a></p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="flexbox gap-items-4">
+                <div>
+                  <i class="fa fa-file-text-o fs-25 pt-4 text-secondary"></i>
+                </div>
+
+                <div>
+                  <h5>Documented</h5>
+                  <p>We provide full documentation for our Rest API. <a href="https:/api.deployhandler.com" target="_blank">Check it out now</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | CTA
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section section-inverse py-40" style="background-color: #209e91">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-9">
+              <h4 class="fw-300 mb-0">Want a bite? You're in the right place!</h4>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <a class="btn btn-round btn-white" href="https://deployhandler.com/#/login">Take a test drive</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Features
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <small>Features</small>
+            <h2>More to Discover</h2>
+            <hr>
+            <p class="lead">We waited until we could do it right. Then we did! Instead of creating a carbon copy.</p>
+          </header>
+
+
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-5">
+              <img class="rounded shadow-2" src="assets/img/feature-1.png" alt="..." data-aos="zoom-in">
+            </div>
+
+            <div class="col-12 col-md-7">
+              <h4>Dashboard</h4>
+              <p>Dashboard is first page you will see once you login. In Dashboard you can see current server resource usage in form of pie charts,
+                take a quick look at your apps and their status, manage TODOs so you can stay organized.</p>
+            </div>
+          </div>
+
+
+          <hr>
+
+
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-7">
+              <h4>My Apps pages</h4>
+              <p>Manage Apps allows you to see list of all your Apps, something like quick look on dashboard, but this includes more features like NPM Install of dependencies, Start/Stop, Modify and more to come.</p>
+              <p>Add App allows you to quickly add your new app, our App Deployer wizzard will do everything for you, you just need to know your app name, entry point and port.</p>
+            </div>
+
+            <div class="col-12 col-md-5">
+              <img class="rounded shadow-2" src="assets/img/feature-2.png" alt="..." data-aos="zoom-in">
+            </div>
+          </div>
+
+
+          <hr>
+
+
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-5">
+              <img class="rounded shadow-2" src="assets/img/feature-3.png" alt="..." data-aos="zoom-in">
+            </div>
+
+            <div class="col-12 col-md-7">
+              <h4>Account settings</h4>
+              <p>This is boring, but helpful part of our platform. Here you can change your current account password (this will change SFTP login as well),
+                see connection info, URLs for your Apps, Wipe TODOs and delete your account (this will remove your account from our platform and delete all your apps. Use with caution).</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Try it now
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray">
+        <div class="container-fluid">
+          <header class="section-header">
+            <small><strong>Try It Now</strong></small>
+            <h2 class="fs-60 hidden-sm-down">Get Started Free</h2>
+            <h2 class="fs-30 hidden-md-up">Get Started Free</h2>
+            <hr>
+            <p class="lead">Sign up for free and explore our platform.</p>
+          </header>
+
+          <div class="row text-center">
+            <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg" placeholder="E-mail" name="email" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" placeholder="Password" name="password" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" placeholder="Verify Password" name="password2" required>
+                </div>
+
+                <button class="btn btn-block btn-lg btn-success">Sign up</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+    </main>
+    <!-- END Main container -->
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-12 col-lg-3">
+            <p class="text-center text-lg-left">
+              <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <p class="text-center text-lg-left copyright">MIT License | Copyright (c) 2017 Aleksandar Babic</p>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="social text-center text-lg-right">
+              <a class="social-linkedin" href="https:/www.linkedin.com/in/aleksandar-babić-45a862131/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a class="social-git" href="https:/github.com/aleksandar-babic" target="_blank"><i class="fa fa-github"></i></a>
+              <a class="social-git" href="https:/bitbucket.org/aleksandarbabic/" target="_blank"><i class="fa fa-bitbucket"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+
+
+
+    <!-- Scripts -->
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/thesaas.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+
+  </body>
+</html>

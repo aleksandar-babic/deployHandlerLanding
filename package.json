@@ -1,0 +1,13 @@
+{
+  "name": "dp-landing",
+  "version": "1.0.0",
+  "description": "Landing page for DeployHandler platform.",
+  "scripts": {
+    "bundle": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksandar Babic",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-bundle-assets": "^2.28.0"
+  }
+}
