@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page for DeployHandler platform.",
   "scripts": {
-    "bundle": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "rm -rf dist && gulp bundle"
   },
   "author": "Aleksandar Babic",
   "license": "MIT",
